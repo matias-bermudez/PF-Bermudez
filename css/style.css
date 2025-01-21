@@ -1,0 +1,1138 @@
+/*FUENTES*/
+/*
+    font-family: "Inter", serif; (titulos h1 como RECORDS o RANKINGS)
+    font-family: "Annapurna SIL", serif; (parrafos, noticias, historia)
+    font-family: "Anton SC", serif; (header y titulos, nombres)
+    font-family: "Do Hyeon", serif; (solo esta en records)
+*/
+/*fin fuentes*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1; 
+}
+
+/*COMIENZA INDEX*/
+
+/* ACA ARRANCA HEADER Y FOOTER*/
+header{
+    background-color: black;
+    width: 100%;
+    height: 20%;
+}
+
+header img {
+    width: 200px;
+    margin: 2%;
+}
+
+header nav {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.pagina-actual {
+    text-decoration: underline ;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin-top: 190px;
+}
+
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+footer .redes .red picture img{
+    width: 100px;
+    height: auto;
+}
+
+.top-main h2{
+    color: black;
+    font-size: 4rem;
+}
+
+
+footer img {
+    height: 50px;
+}
+
+/*ACA TERMINA HEADER Y FOOTER*/
+
+.noticias-index .grid-container {
+    display: grid;
+
+}
+
+.item1{
+
+}
+.item2{
+
+}
+.item3{
+
+}
+.item4{
+
+}
+.item5{
+
+}
+.item6{
+
+}
+.item7{
+
+}
+.item8{
+
+}
+.item9{
+
+}
+.item10{
+
+}
+.item11{
+
+}
+.item12{
+
+}
+
+.top-main img{
+    width: 100%;
+}
+
+.top-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.noticias-index {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticias-index h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(210, 10, 10);
+    padding: 60px 15px 15px 15px;
+    margin: 0px 15px 15px 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.noticias-index .fila-noticias{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    height: 550px;
+    margin: 20px 0px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.noticias-index .col-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px ;
+}
+
+.noticias-index img{
+    width: 100%;
+}
+
+.noticia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 330px;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px gray;
+    border: 5px r silver;
+    margin: 15px 10px;
+}
+
+.noticia a, p, h2, h3 {
+    margin: 10px;
+}
+
+.noticia a {
+    margin-top: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.noticia h2, h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.noticia p {
+    font-size: 1.5rem;
+    font-family: "Annapurna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.noticia img{
+    width: 100%;
+    margin-top: 0px;
+}
+
+.noticia a {
+    color: gray;
+    text-decoration: none;
+}
+
+.img-central {
+    width: 100%;
+}
+
+.footer-index {
+    margin-top: 65%;
+}
+
+/*FIN INDEX*/
+
+/*Inicio noticias ufc*/
+
+.noticias img {
+    width: 600px;
+    object-fit: contain;
+}
+
+.noticias {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.noticias h2, .noticias h3, .noticias td, .noticias th, .noticias p {
+    color: black
+}
+
+.noticias h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.noticias p {
+    font-family: "Annapurna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    font-size: 1.5rem;
+}
+
+.noticia-vertical iframe {
+    height: 260px;
+    width: 95%;
+    padding: 10px 0px;
+}
+
+.noticia-vertical {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    padding: 40px 15px 40px 15px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 20px silver;
+}
+
+.noticia-vertical img {
+    width: 95%;
+    object-fit: contain;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    margin: 0px 50px auto 50px;
+
+}
+
+table tr td{
+    padding: 10px 0px;
+}
+
+/*fin noticias ufc*/
+
+/*ARRANCA NOSOTROS*/
+
+.about-us {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 5% 5%;
+    flex-wrap: wrap;
+}
+
+.puntos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    margin: 20px 10px 20px 10px;
+    padding: 0px;
+}
+
+.punto {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.punto h2{
+    display: inline;
+    text-align: center;
+    background-color: rgb(210, 10, 10);
+    color: white;
+    font-size: 2.5rem;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.punto p {
+    font-size: 2rem;
+    font-family: "Annapurna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(210, 10, 10, 0.8);
+    width: 45%;
+    margin: 50px 0px;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+        url(../assets/img/ufc-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario h2{
+    margin-top: 20px;
+    font-weight: 1000;
+    font-size: 2rem;
+    color: black;
+}
+
+.formulario .inputs {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px 30px;
+}
+
+.inputs textarea, input {
+    margin: 10px 0px;
+    background-color: rgba(192, 192, 192, 0.561);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 15px;
+}
+
+.inputs textarea:hover, input:hover{
+    box-shadow: 0px 0px 10px rgba(210, 10, 10, 0.8);
+}
+
+.inputs label {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: rgba(210, 10, 10, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+
+textarea::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+/*TERMINA NOSOTROS*/
+
+/*ACA ARRANCA RANKING*/
+
+.h1-ranking {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(210, 10, 10);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 850px;
+    margin: 0px 15px;
+    box-shadow: 0px 0px 10px silver;
+}
+
+.card ol {
+    padding: 15px 15px;
+}
+
+.card ol li {
+    color: rgb(76, 76, 76);
+    margin-bottom: 10px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 20px;
+}
+
+.card ol li::marker{
+    font-weight: bold;
+}
+
+.card h2{
+    color: black;
+    text-align: right;
+    margin-left: auto;
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+.card h3{
+    color: rgb(210, 10, 10);
+    text-align: left;
+    margin-right: auto;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.card h4 {
+    color: gray;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.card h2, .card h3 {
+    margin-bottom: -20px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: -51px;
+}
+
+.nombre-peso {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card h2, h4 {
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fila-ranking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 10px;
+    gap: 30px 0px;
+    flex-wrap: wrap;
+}
+
+.card .libra-x-libra {
+    margin-top: -17px;
+}
+/*ACA TERMINA RANKING*/
+
+/*ACA ARRANCA RECORDS*/
+
+.h1-records {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(210, 10, 10);
+}
+
+.columna-centrada {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0px 10px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.columna-centrada ul li {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.columna-centrada ul {
+    list-style-type: none;
+}
+
+.columna-centrada h3{
+    color: rgb(210, 10, 10);
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.columna-hacia-izq{
+    height: 100%;
+    width: 45%;
+    margin: 70px 10px 10px 30px;
+    padding: 10px 0px;
+}
+
+.columna-hacia-izq h3, .columna-hacia-izq p, .columna-hacia-izq h2 {
+    text-align: left;
+}
+
+.columna-hacia-izq h3 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin: 10px 0px;
+}
+
+.peleador {
+    height: 531px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), /* Capa semi-transparente */
+        url('../assets/img/ufc-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.peleadores ul li, .peleadores p, .peleador h3 {
+    color: white;
+    font-family: "Do Hyeon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.peleadores ul li {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.peleadores h2 {
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    line-height: 100px;
+    color: white;
+}
+
+.peleadores p {
+    font-family: "Do Hyeon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: white;
+}
+
+.peleadores img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.peleadores h3 {
+    color: rgb(210, 10, 10);
+}
+
+.videos-record {
+    background-color: black;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+
+.video {
+    width: 50%;
+    height: 100%;
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video h2, .video h3 {
+    color: white;
+    text-align: center;
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.video h2 {
+    margin-bottom: -10px;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.video h3 {
+    font-size: 25px;
+}
+
+.video .titulo-video, .videos-columna .titulo-video {
+    color: rgb(210, 10, 10);
+    font-size: 48px;
+    font-family: "Do Hyeon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.video iframe {
+    margin: 0px 30px;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+    object-fit: contain;
+    margin-bottom: 60px;
+    padding: 5px;
+    background-color: rgb(210, 10, 10);
+}
+
+.videos-columna {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.videos-columna .videos-record{
+    height: 520px;
+}
+
+.videos-columna .video iframe {
+    width: 100%;
+    height: 460%;
+}
+
+.footer-records {
+    margin-top: 10px;
+}
+/*ACA TERMINA RECORDS*/
+
+
+@media(max-width:768px){
+
+    /*INDEX 768px*/
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    header nav {
+        margin: 0px 10px;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    .noticias-index .fila-noticias {
+        padding: auto 10px;
+        width: 100%;
+    }
+
+    .noticias-index .noticia {
+        width: 290px;
+    }
+
+    .noticias-index h2 {
+        font-size: 30px;
+    }
+
+    .footer-index {
+        margin-top: 280%;
+    }
+    /*fin index 768px*/
+
+    /*Inicio rankings*/
+
+    .h1-ranking {
+        font-size: 50px;
+    }
+
+    .card {
+        width: 300px;
+        height: 810px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card h2 {
+        font-size: 2.5rem;
+    }
+
+    .fila-ranking {
+        flex-wrap: wrap;
+        gap: 30px 10px;
+    }
+
+    .footer-ranking {
+        margin-top: 10px;
+    }
+
+    /*fin rankings*/
+
+    /*inicio nosotros*/
+
+    .about-us .puntos .punto {
+        margin: 10px 0px;
+        padding: 0px;
+    }
+
+    .puntos .punto p {
+        font-size: 1.5rem;
+    }
+
+    .about-us .puntos {
+        width: 90%;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .formulario {
+        background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+        url(../assets/img/ufc-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 15px 0px;
+        width: 90%;
+    }
+
+    .footer-about-us {
+        margin-top: 10px;
+    }
+    /*fin nosotros*/
+
+    /*inicio records*/
+
+    .peleador {
+        height: 450px;
+        background-size: 120% 100%;
+    }
+
+    .peleadores img{
+        height: 100%;
+        width: 90%;
+        margin-left: -120px;
+    }
+
+    .peleador .columna-hacia-izq {
+        margin: 0px;
+        padding: 20px 0px;
+        margin-left: 15px;
+    }
+
+    .peleador .columna-hacia-izq h2{
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .peleador h3 {
+        margin: 20px 0px;
+        font-size: 2rem;
+    }
+
+    .peleador .columna-centrada {
+        margin-left: -150px;
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .peleador .columna-centrada ul li {
+        font-size: 1.5rem;
+    }
+
+    .peleador ul li {
+        margin: 20px 0px
+    }
+
+    .videos-record {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .video {
+        width: 45%;
+        margin: 20px 10px;
+    }
+
+    .video .titulo-video, .video h2 {
+        font-size: 2rem;
+    }
+
+    .videos-columna .titulo-video {
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px 20px;
+    }
+
+    .videos-columna .videos-record {
+        height: auto;
+    }   
+
+    .videos-columna .video iframe {
+        width: 90%;
+        margin: 0;
+    }
+
+    /*fin records*/
+
+    /*inicio noticias*/
+    
+    .noticias {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .columna {
+        width: 80%;
+    }
+
+    /*fin noticias*/    
+}
+
+@media(max-width:375px){
+
+    /*inicio index*/
+
+    header img {
+        width: 100%;
+    }
+
+    header ul li a{
+        font-size: 0.5rem;
+    }
+
+    .noticias-index h2 {
+        font-size: 1.5rem;
+        margin: 0px 15px;
+    }
+
+    .noticias-index h3 {
+        font-size: 1.5rem;
+    }
+
+    .noticias-index .col-noticias {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .noticias-index p {
+        font-size: 1.2rem;
+    }
+
+    .fila-noticias .col-noticias {
+        padding: 0px 15px 20px 15px;
+    }
+
+    .footer-index {
+        margin-top: 2600px;
+        width: 100%;
+    }
+
+    footer .redes .red picture img{
+        width: 60px;
+        height: auto;
+    }
+
+    /*fin index*/
+
+    /*inicio ranking*/
+
+    .h1-ranking {
+        font-size: 2rem;
+    }
+
+    .card {
+        height: 730px;
+    }
+
+    .card ol li {
+        margin-bottom: 5px;
+    }
+
+    /*fin ranking*/
+
+    /*inicio nosotros*/
+
+    .about-us {
+        margin: 5px 0px;
+        width: 100%;
+        padding: 15px 0px;
+    }
+
+    .punto {
+        gap: 30px;
+    }
+
+    .punto p {
+        margin: 10px 0px;
+    }
+
+    .about-us .puntos .punto h2 {
+        width: 30%;
+        font-size: 1.4rem;
+        margin: 10px 0px;
+    }
+
+    .formulario .inputs {
+        padding: 10px 20px;
+        width: 90%;
+        
+    }
+
+    .formulario input {
+        width: 90%;
+    }
+
+    .formulario label {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        align-items: center;
+    }
+
+    /*fin nosotros*/
+
+    /*inicio records*/
+
+    .h1-records {
+        font-size: 3rem;
+    }
+
+    .peleador {
+        flex-wrap: wrap;
+        height: 560px;
+    }
+
+    .peleador .columna-hacia-izq {
+        width: 56%;
+    }
+
+    .peleadores img {
+        width: 150px;
+        margin: 0;
+        margin-top: -290px;
+    }
+
+    .peleador .columna-hacia-izq h3, .peleador .columna-hacia-izq P {
+        font-size: 1.5rem;
+        line-height: 20px;
+        margin: 10px;
+    }
+
+    .peleador .columna-hacia-izq h2 {
+        font-size: 3rem;
+        line-height: 50px;
+        margin: 10px 0px 0px 10px;
+    }
+
+    .peleador .columna-centrada {
+        margin: 0;
+        margin-top: -470px;
+        width: 100%;
+    }
+
+    .peleador .columna-centrada h3, .columna-centrada ul li {
+        font-size: 25px;
+    }
+
+    .videos-record {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .video {
+        width: 100%;
+        margin: 0;
+    }
+
+    .videos-columna .titulo-video {
+        font-size: 2rem;
+    }
+
+    /*fin records*/
+
+    /*inicio noticias*/
+
+    .columna {
+        width: 90%;
+        margin: 0px 5px
+    }
+
+    .columna .noticia-vertical {
+        padding: 20px 10px;
+    }
+
+    .columna .noticia-vertical h2 {
+        font-size: 1.5rem;
+    }
+
+    .columna .noticia-vertical iframe {
+        height: auto;
+    }
+
+    .columna .noticia-vertical p {
+        font-size: 1.2rem;
+    }
+
+    .footer-noticias {
+        margin-top: 10%;
+    }
+
+    /*fin noticias*/
+
+}
