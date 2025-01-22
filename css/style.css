@@ -536,12 +536,16 @@ textarea::placeholder {
     font-weight: bold;
 }
 
+.card h2, .card h3 {
+    margin-bottom: -20px;
+}
+
 .card h2{
     color: black;
     text-align: right;
     margin-left: auto;
     font-size: 48px;
-    margin-top: 0px;
+    margin-right: 10px;
 }
 
 .card h3{
@@ -555,16 +559,22 @@ textarea::placeholder {
     font-size: 20px;
 }
 
+.card .nombre-peso h3 {
+    margin: 10px 0px 0px 10px;
+    font-size: 12px;
+}
+
+.card .nombre-peso h2 {
+    margin-right: 10px;
+    height: 60px;
+}
+
 .card h4 {
     color: gray;
     text-align: right;
     margin-left: auto;
     margin-top: 10px;
     padding: 0px 10px;
-}
-
-.card h2, .card h3 {
-    margin-bottom: -20px;
 }
 
 .card img {
@@ -579,7 +589,7 @@ textarea::placeholder {
     width: 100%;
     text-align: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 0px 10px 10px 10px;
     margin: 0px;
 }
 
@@ -878,6 +888,14 @@ textarea::placeholder {
 
     .card h3 {
         font-size: 16px;
+    }
+
+    .card .nombre-peso h3 {
+        margin: 10px;
+    }
+
+    .card .nombrepeso h2 {
+        margin-right: 10px;
     }
 
     .card h2 {
