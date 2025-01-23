@@ -23,9 +23,7 @@ main {
     flex: 1; 
 }
 
-/*COMIENZA INDEX*/
-
-/* ACA ARRANCA HEADER Y FOOTER*/
+/* I Header & Footer */
 header{
     background-color: black;
     width: 100%;
@@ -68,41 +66,38 @@ nav ul li a:hover {
     text-decoration: underline ;
 }
 
-footer {
+footer, .footer-about-us, .footer-index, .footer-noticias, .footer-ranking, .footer-records {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    margin-top: 190px;
 }
 
 
-footer .redes {
+footer .redes, .footer-about-us .redes, .footer-index .redes, .footer-noticias .redes, .footer-ranking .redes, .footer-records .redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 
 footer .redes .red picture img{
-    width: 100px;
+    width: 70px;
     height: auto;
+    object-fit: contain;
 }
+
+/* F Header & Footer*/
+
+/* I Index*/
 
 .top-main h2{
     color: black;
     font-size: 4rem;
 }
-
-
-footer img {
-    height: 50px;
-}
-
-/*ACA TERMINA HEADER Y FOOTER*/
 
 .noticias-index .grid-container {
     display: grid;
@@ -332,6 +327,7 @@ footer img {
     font-style: normal;
     line-height: 1.1;
     font-size: 1.5rem;
+    margin: 10px 5px;
 }
 
 .noticia-vertical iframe {
@@ -354,6 +350,10 @@ footer img {
 .noticia-vertical img {
     width: 95%;
     object-fit: contain;
+}
+
+.noticia-vertical p::first-letter {
+    font-size: 3rem;
 }
 
 .columna {
@@ -404,7 +404,7 @@ table tr td{
     text-align: center;
     background-color: rgb(210, 10, 10);
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 5px 20px;
     border-radius: 5px;
     font-family: "Inter", serif;
@@ -414,10 +414,11 @@ table tr td{
 }
 
 .punto p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Annapurna SIL", serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 15px;
 }
 
 .formulario {
@@ -435,6 +436,7 @@ table tr td{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 15px;
 }
 
 .formulario h2{
@@ -452,17 +454,19 @@ table tr td{
     padding: 10px 30px;
 }
 
-.inputs textarea, input {
+.formulario .inputs textarea, .formulario  .inputs input {
     margin: 10px 0px;
-    background-color: rgba(192, 192, 192, 0.561);
+    background-color: rgba(255, 255, 255, 0.1);
     outline: none;
     border: none;
     border-radius: 8px;
     padding: 15px 15px;
+    border-bottom: 1px solid rgba(210, 10, 10, 0.9);
 }
 
-.inputs textarea:hover, input:hover{
-    box-shadow: 0px 0px 10px rgba(210, 10, 10, 0.8);
+.formulario .inputs textarea:focus, .formulario  .inputs input:focus {
+    background-color: rgba(210, 10, 10, 0.2);
+    border-bottom: none;
 }
 
 .inputs label {
@@ -651,7 +655,7 @@ textarea::placeholder {
 
 .columna-centrada h3{
     color: rgb(210, 10, 10);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 20px 0px;
 }
@@ -811,10 +815,50 @@ textarea::placeholder {
 /*ACA TERMINA RECORDS*/
 
 
+@media(max-width:1400px) {
+
+    /* I Index */
+
+    .footer-index {
+        margin-top: 2100px;
+    }
+
+    /* F Index */
+
+    /* I Nosotros */
+    .punto h2 {
+        font-size: 1.7rem;
+    }
+
+    /* F Nosotros*/
+
+    /* I Records*/
+
+    .peleadores .peleador .columna-centrada h3 {
+        font-size: 2rem;
+    }
+
+    .peleadores .peleador .columna-centrada ul li {
+        font-size: 1.5rem;
+    }
+
+    .peleadores img {
+        margin-left: -50px;
+    }
+
+    .peleadores .columna-centrada {
+        margin-left: -150px;
+    }
+
+    .peleadores .columna-hacia-izq h2 {
+        font-size: 5rem;
+        line-height: 85px;
+    }
+}
+
 @media(max-width:1024px){
 
-    /*INDEX 1024px*/
-
+    /* I Header */
     header nav {
         margin: 0px 10px;
     }
@@ -827,6 +871,10 @@ textarea::placeholder {
         font-size: 1.5rem;
         padding: 0px;
     }
+
+    /* F Header */
+
+    /* I Index */
 
     .noticias-index .grid-container {
         grid-template-columns: repeat(4, 1fr);
@@ -856,9 +904,9 @@ textarea::placeholder {
     .footer-index {
         margin-top: 3100px;
     }
-    /*fin index 1024px*/
+    /* F Index */
 
-    /*Inicio rankings*/
+    /* I Rankings*/
 
     .h1-ranking {
         font-size: 50px;
@@ -866,7 +914,7 @@ textarea::placeholder {
 
     .card {
         width: 300px;
-        height: 810px;
+        height: 820px;
     }
 
     .card h3 {
@@ -905,6 +953,7 @@ textarea::placeholder {
 
     .puntos .punto p {
         font-size: 1.5rem;
+        margin: 15px 0px;
     }
 
     .about-us .puntos {
@@ -917,6 +966,7 @@ textarea::placeholder {
         flex-direction: column;
         width: 90%;
         margin-top: 5px;
+        padding: 20px 20px;
     }
 
     .formulario {
@@ -1030,7 +1080,14 @@ textarea::placeholder {
     /*fin noticias*/    
 }
 
-@media(max-width:768px) {
+@media(max-width:844px) {
+
+    .footer-index {
+        margin-top: 3100px;
+    }
+}
+
+@media(max-width:768px) { 
     header nav ul li a {
         font-size: 1rem;
     }
@@ -1054,15 +1111,116 @@ textarea::placeholder {
         font-size: 20px;
     }
 
-    .footer-index {
-        margin-top: 3100px;
+    /* I Nosotros */ 
+
+    .about-us {
+        padding: 0;
+        width: 100%;
+        margin: 0;
     }
+
+    .about-us .puntos .punto {
+        width: 100%;
+    }
+
+    .about-us .puntos .punto h2{
+        font-size: 1.5rem;
+    }
+
+    .about-us .puntos .punto p{
+        font-size: 1.2rem;
+    }
+
+    .about-us .inputs label {
+        font-size: 1rem;
+    }
+    /* I Nosotros */
+}
+
+@media(max-width:600px) {
+    header nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    /* I Nosotros*/
+
+    .about-us {
+        padding: 0;
+    }
+
+    
+
+    .about-us .puntos .punto h2 {
+        font-size: 1rem;
+    }
+    /* F Nosotros*/
+
+    /*inicio records*/
+
+    .h1-records {
+        font-size: 3rem;
+    }
+
+    .peleador {
+        flex-wrap: wrap;
+        height: 560px;
+        background-size:contain;
+    }
+
+    .peleador .columna-hacia-izq {
+        width: 56%;
+    }
+
+    .peleadores img {
+        width: 150px;
+        margin: 0;
+        margin-top: -290px;
+    }
+
+    .peleador .columna-hacia-izq h3, .peleador .columna-hacia-izq P {
+        font-size: 1.5rem;
+        line-height: 20px;
+        margin: 10px;
+    }
+
+    .peleador .columna-hacia-izq h2 {
+        font-size: 3rem;
+        line-height: 50px;
+        margin: 10px 0px 0px 10px;
+    }
+
+    .peleador .columna-centrada {
+        margin: 0;
+        margin-top: -470px;
+        width: 100%;
+    }
+
+    .peleador .columna-centrada h3, .columna-centrada ul li {
+        font-size: 25px;
+        margin: 5px 0px;
+    }
+
+    .videos-record {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .video {
+        width: 100%;
+        margin: 0;
+    }
+
+    .videos-columna .titulo-video {
+        font-size: 2rem;
+    }
+
+    /*fin records*/
 }
 
 @media(max-width:460px){
 
     /*inicio index*/
-
+    
     .noticias-index .grid-container {
         width: 80%;
     }
@@ -1114,15 +1272,9 @@ textarea::placeholder {
     }
 
     .footer-index {
-        align-items: center;
-        justify-items: center;
         margin-top: 2500px;
-        width: 100%;
     }
 
-    .footer-index .red{
-        width: 20px;
-    }
 
     /*fin index*/
 
@@ -1133,7 +1285,7 @@ textarea::placeholder {
     }
 
     .card {
-        height: 730px;
+        height: 750px;
     }
 
     .card ol li {
@@ -1184,64 +1336,20 @@ textarea::placeholder {
 
     /*fin nosotros*/
 
-    /*inicio records*/
+    /* I Records*/
 
-    .h1-records {
-        font-size: 3rem;
-    }
-
-    .peleador {
-        flex-wrap: wrap;
-        height: 560px;
-    }
-
-    .peleador .columna-hacia-izq {
-        width: 56%;
-    }
-
-    .peleadores img {
-        width: 150px;
-        margin: 0;
-        margin-top: -290px;
-    }
-
-    .peleador .columna-hacia-izq h3, .peleador .columna-hacia-izq P {
+    .peleadores .peleador .columna-centrada h3 {
         font-size: 1.5rem;
-        line-height: 20px;
-        margin: 10px;
+        margin-bottom: 0;
     }
 
-    .peleador .columna-hacia-izq h2 {
-        font-size: 3rem;
-        line-height: 50px;
-        margin: 10px 0px 0px 10px;
+    .peleadores .peleador .columna-centrada ul li {
+        font-size: 1.5rem;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .peleador .columna-centrada {
-        margin: 0;
-        margin-top: -470px;
-        width: 100%;
-    }
-
-    .peleador .columna-centrada h3, .columna-centrada ul li {
-        font-size: 25px;
-    }
-
-    .videos-record {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .video {
-        width: 100%;
-        margin: 0;
-    }
-
-    .videos-columna .titulo-video {
-        font-size: 2rem;
-    }
-
-    /*fin records*/
+    /* F Records*/
 
     /*inicio noticias*/
 
@@ -1273,3 +1381,55 @@ textarea::placeholder {
     /*fin noticias*/
 
 }
+
+@media(max-width:375px) {
+
+    /* I Index */
+    .footer-index {
+        margin-top: 2800px;
+    }
+    /* F Index */
+
+    /* I Records */
+
+    .peleador {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 700px;
+    }
+
+    .peleadores .peleador .columna-centrada, .peleadores .peleador .columna-hacia-izq {
+        width: 100%;
+    } 
+
+    .peleadores img, .peleadores .peleador .columna-centrada {
+        margin: 0;
+    }
+
+    .peleadores img {
+        margin-top: -20px;
+    }
+
+    .peleadores .peleador .columna-centrada {
+        margin-top: -40px;
+    }
+
+    .peleadores .peleador .columna-hacia-izq h2, .peleadores .peleador .columna-hacia-izq h3,     .peleadores .peleador .columna-hacia-izq p{
+        margin: 0;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    .peleadores .peleador .columna-hacia-izq {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 280px;
+    }
+
+    /* F Records */
+}
+
