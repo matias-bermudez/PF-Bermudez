@@ -35,7 +35,6 @@ header img {
     margin: 2%;
 }
 
-
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -89,11 +88,9 @@ footer .redes .red picture img{
     height: auto;
     object-fit: contain;
 }
-
 /* F Header & Footer*/
 
 /* I Index*/
-
 .top-main h2{
     color: black;
     font-size: 4rem;
@@ -107,7 +104,6 @@ footer .redes .red picture img{
     "item1 item1 item2 item2 item3 item3 item4 item4 "
     "item5 item6 item7 item8 item9 item10 item11 item12"
     ;
-
     padding: 20px 10px;
     align-items: center; 
     justify-items: left;
@@ -268,7 +264,6 @@ footer .redes .red picture img{
     text-align: center;
 }
 
-
 .noticia p {
     font-size: 1.5rem;
     font-family: "Annapurna SIL", serif;
@@ -294,11 +289,9 @@ footer .redes .red picture img{
 .footer-index {
     margin-top: 65%;
 }
+/* F Index*/
 
-/*FIN INDEX*/
-
-/*Inicio noticias ufc*/
-
+/* I Noticias */
 .noticias img {
     width: 600px;
     object-fit: contain;
@@ -369,11 +362,9 @@ footer .redes .red picture img{
 table tr td{
     padding: 10px 0px;
 }
+/* F Noticias*/
 
-/*fin noticias ufc*/
-
-/*ARRANCA NOSOTROS*/
-
+/* I Nosotros */
 .about-us {
     display: flex; 
     flex-direction: row;
@@ -497,10 +488,9 @@ textarea::placeholder {
     color: gray;
     font-size: 20px;
 }
-/*TERMINA NOSOTROS*/
+/* F Nosotros*/
 
-/*ACA ARRANCA RANKING*/
-
+/* I Ranking */
 .h1-ranking {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
@@ -616,10 +606,9 @@ textarea::placeholder {
 .card .libra-x-libra {
     margin-top: -17px;
 }
-/*ACA TERMINA RANKING*/
+/* F Ranking*/
 
-/*ACA ARRANCA RECORDS*/
-
+/* I Records*/
 .h1-records {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
@@ -685,7 +674,7 @@ textarea::placeholder {
     align-items: center;
     margin: 20px 0px;
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), /* Capa semi-transparente */
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
         url('../assets/img/ufc-logo.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -743,7 +732,7 @@ textarea::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
 }
 
 .video {
@@ -812,28 +801,24 @@ textarea::placeholder {
 .footer-records {
     margin-top: 10px;
 }
-/*ACA TERMINA RECORDS*/
+/* F Records */
 
 
 @media(max-width:1400px) {
 
     /* I Index */
-
     .footer-index {
         margin-top: 2100px;
     }
-
     /* F Index */
 
     /* I Nosotros */
     .punto h2 {
         font-size: 1.7rem;
     }
-
     /* F Nosotros*/
 
     /* I Records*/
-
     .peleadores .peleador .columna-centrada h3 {
         font-size: 2rem;
     }
@@ -854,11 +839,12 @@ textarea::placeholder {
         font-size: 5rem;
         line-height: 85px;
     }
+    /* F Records */
 }
 
 @media(max-width:1024px){
 
-    /* I Header */
+    /* I Header & Footer*/
     header nav {
         margin: 0px 10px;
     }
@@ -872,10 +858,17 @@ textarea::placeholder {
         padding: 0px;
     }
 
-    /* F Header */
+    .footer-index {
+        margin-top: 3100px;
+    }
+
+    .footer-ranking {
+        margin-top: 10px;
+    }
+
+    /* F Header & Footer */
 
     /* I Index */
-
     .noticias-index .grid-container {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
@@ -884,7 +877,6 @@ textarea::placeholder {
         "item4 item4 item3 item3"
         "item9 item10 item11 item12"
         ;
-
         width: 80%;
         row-gap: 10px;
     }
@@ -900,14 +892,9 @@ textarea::placeholder {
     .noticias-index h2 {
         font-size: 25px;
     }
-
-    .footer-index {
-        margin-top: 3100px;
-    }
     /* F Index */
 
     /* I Rankings*/
-
     .h1-ranking {
         font-size: 50px;
     }
@@ -937,15 +924,9 @@ textarea::placeholder {
         flex-wrap: wrap;
         gap: 30px 10px;
     }
+    /* F Ranking */
 
-    .footer-ranking {
-        margin-top: 10px;
-    }
-
-    /*fin rankings*/
-
-    /*inicio nosotros*/
-
+    /* I Nosotros*/
     .about-us .puntos .punto {
         margin: 10px 0px;
         padding: 0px;
@@ -982,10 +963,9 @@ textarea::placeholder {
     .footer-about-us {
         margin-top: 10px;
     }
-    /*fin nosotros*/
+    /* I Nosotros*/
 
-    /*inicio records*/
-
+    /* I Records*/
     .peleador {
         height: 450px;
         background-size: 120% 100%;
@@ -1062,11 +1042,9 @@ textarea::placeholder {
         width: 90%;
         margin: 0;
     }
+    /* F Records*/
 
-    /*fin records*/
-
-    /*inicio noticias*/
-    
+    /* I Noticias */
     .noticias {
         flex-wrap: wrap;
         align-items: center;
@@ -1077,7 +1055,7 @@ textarea::placeholder {
         width: 80%;
     }
 
-    /*fin noticias*/    
+    /* F Noticias */    
 }
 
 @media(max-width:844px) {
@@ -1138,17 +1116,15 @@ textarea::placeholder {
 }
 
 @media(max-width:600px) {
+
     header nav ul li a {
         font-size: 0.8rem;
     }
 
     /* I Nosotros*/
-
     .about-us {
         padding: 0;
     }
-
-    
 
     .about-us .puntos .punto h2 {
         font-size: 1rem;
@@ -1156,7 +1132,6 @@ textarea::placeholder {
     /* F Nosotros*/
 
     /*inicio records*/
-
     .h1-records {
         font-size: 3rem;
     }
@@ -1213,13 +1188,12 @@ textarea::placeholder {
     .videos-columna .titulo-video {
         font-size: 2rem;
     }
-
-    /*fin records*/
+    /* F Records*/
 }
 
 @media(max-width:460px){
 
-    /*inicio index*/
+    /* I Index*/
     
     .noticias-index .grid-container {
         width: 80%;
@@ -1274,12 +1248,9 @@ textarea::placeholder {
     .footer-index {
         margin-top: 2500px;
     }
+    /* F Index*/
 
-
-    /*fin index*/
-
-    /*inicio ranking*/
-
+    /* I Ranking*/
     .h1-ranking {
         font-size: 2rem;
     }
@@ -1291,11 +1262,9 @@ textarea::placeholder {
     .card ol li {
         margin-bottom: 5px;
     }
+    /* F Ranking*/
 
-    /*fin ranking*/
-
-    /*inicio nosotros*/
-
+    /* I Nosotros*/
     .about-us {
         margin: 5px 0px;
         width: 100%;
@@ -1319,7 +1288,6 @@ textarea::placeholder {
     .formulario .inputs {
         padding: 10px 20px;
         width: 90%;
-        
     }
 
     .formulario input {
@@ -1333,11 +1301,9 @@ textarea::placeholder {
     .btn {
         align-items: center;
     }
-
-    /*fin nosotros*/
+    /* F Nosotros*/
 
     /* I Records*/
-
     .peleadores .peleador .columna-centrada h3 {
         font-size: 1.5rem;
         margin-bottom: 0;
@@ -1348,11 +1314,9 @@ textarea::placeholder {
         margin-left: 5px;
         margin-right: 5px;
     }
-
     /* F Records*/
 
-    /*inicio noticias*/
-
+    /* I Noticias*/
     .columna {
         width: 90%;
         margin: 0px 5px
@@ -1377,7 +1341,6 @@ textarea::placeholder {
     .footer-noticias {
         margin-top: 10%;
     }
-
     /*fin noticias*/
 
 }
@@ -1391,7 +1354,6 @@ textarea::placeholder {
     /* F Index */
 
     /* I Records */
-
     .peleador {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1421,7 +1383,6 @@ textarea::placeholder {
         margin-bottom: 5px;
     }
 
-
     .peleadores .peleador .columna-hacia-izq {
         align-items: center;
         justify-content: center;
@@ -1429,7 +1390,6 @@ textarea::placeholder {
         margin: 0;
         height: 280px;
     }
-
     /* F Records */
 }
 
