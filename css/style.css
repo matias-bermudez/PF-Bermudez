@@ -106,11 +106,11 @@ footer .redes .red picture img{
     ;
     padding: 20px 10px;
     align-items: center; 
-    justify-items: left;
+    justify-items: center;
     width: 95%;
     box-shadow: 0px 0px 10px gray;
     margin-top: 20px;
-    background: linear-gradient(to top, black, rgba(210, 10, 10, 0.477));
+    background: linear-gradient(to top, rgb(255, 46, 46), rgb(255, 154, 161));
 }
 
 .grid-container img{
@@ -129,7 +129,7 @@ footer .redes .red picture img{
 }
 
 .grid-container h4 {
-    text-align: left;
+    text-align: center;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -879,6 +879,7 @@ textarea::placeholder {
         ;
         width: 80%;
         row-gap: 10px;
+        
     }
 
     .noticias-index .fila-noticias {
