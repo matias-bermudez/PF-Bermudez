@@ -1228,7 +1228,7 @@ textarea::placeholder {
     }
 
     .col-noticias .noticia {
-        width: 70%;
+        width: 300px;
         margin: 15px 0px;
 
     }
