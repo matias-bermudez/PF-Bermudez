@@ -1257,7 +1257,12 @@ textarea::placeholder {
     }
 
     .card {
-        height: 750px;
+        height: 780px;
+        width: 320px;
+    }
+
+    .card ol {
+        margin: 0px 0px 0px 30px;
     }
 
     .card ol li {
