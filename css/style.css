@@ -24,6 +24,27 @@ main {
 }
 
 /* I Header & Footer */
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.navbar-toggler-icon {
+    padding: 20px;
+    border-radius: 5px;
+    color: rgba(210, 10, 10, 0.4);
+    font-size: 3rem;
+    filter: invert(13%) sepia(100%) saturate(7473%) hue-rotate(358deg) brightness(100%) contrast(119%);
+}
+
 header{
     background-color: black;
     width: 100%;
@@ -31,8 +52,7 @@ header{
 }
 
 header img {
-    width: 200px;
-    margin: 2%;
+    margin: 2% 10%;
 }
 
 header nav ul {
@@ -53,12 +73,8 @@ nav ul li a{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: italic;
-    padding: 10px 15px;
+    padding: 0px 10px;
     display: flex;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 .pagina-actual {
@@ -116,7 +132,6 @@ footer .redes .red picture img{
 .grid-container img{
     width: 100%;
     object-fit: contain;
-    margin-bottom: -4px;
 }
 
 .grid-container h3, .grid-container h4 {
@@ -185,6 +200,10 @@ footer .redes .red picture img{
     background-color: black;
 }
 
+.grid-container .item1 h3, .grid-container .item2 h3, .grid-container .item3 h3, .grid-container .item4 h3 {
+    font-weight: 700;
+}
+
 .top-main img{
     width: 100%;
 }
@@ -210,6 +229,8 @@ footer .redes .red picture img{
     margin: 0px 15px 15px 15px;
     font-size: 2rem;
     text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: 800;
 }
 
 .noticias-index .fila-noticias{
@@ -250,6 +271,11 @@ footer .redes .red picture img{
 
 .noticia a, .noticia p, .noticia h2, .noticia h3 {
     margin: 10px;
+}
+
+.noticia h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
 }
 
 .noticia a {
@@ -583,7 +609,7 @@ textarea::placeholder {
     width: 100%;
     text-align: center;
     justify-content: space-between;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 0px 10px 0px;
     margin: 0px;
 }
 
