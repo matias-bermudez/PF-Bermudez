@@ -28,7 +28,7 @@ main {
 .navbar-nav .nav-link {
     color: rgb(255, 255, 255) !important;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     padding: 0px 10px;
 }
 
@@ -71,7 +71,6 @@ nav ul li a{
     font-size: 30px;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: italic;
     padding: 0px 10px;
     display: flex;
@@ -366,13 +365,19 @@ footer .redes .red picture img{
     box-shadow: 0px 0px 20px silver;
 }
 
+.noticia-vertical h2 {
+    margin-top: 10px;
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
+}
+
 .noticia-vertical img {
     width: 95%;
     object-fit: contain;
 }
 
-.noticia-vertical p::first-letter {
-    font-size: 3rem;
+.noticia-vertical p {
+    margin-top: 5px;
 }
 
 .columna {
@@ -416,18 +421,17 @@ table tr td{
     width: 100%;
 }
 
-.punto h2{
+.about-us .puntos .punto h2{
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
     display: inline;
     text-align: center;
-    background-color: rgb(210, 10, 10);
-    color: white;
+    color: rgb(210, 10, 10);
     font-size: 2.3rem;
     padding: 5px 20px;
     border-radius: 5px;
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: italic;
+    
 }
 
 .punto p {
@@ -841,6 +845,9 @@ textarea::placeholder {
     /* I Nosotros */
     .punto h2 {
         font-size: 1.7rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
     }
     /* F Nosotros*/
 
