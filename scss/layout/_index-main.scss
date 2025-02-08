@@ -1,0 +1,172 @@
+.top-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        color: black;
+        font-size: 4rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.noticias-index {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    .grid-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "item1 item1 item2 item2 item3 item3 item4 item4 "
+        "item5 item6 item7 item8 item9 item10 item11 item12"
+        ;
+        padding: 20px 10px;
+        align-items: center; 
+        justify-items: center;
+        width: 95%;
+        box-shadow: 0px 0px 10px gray;
+        margin-top: 20px;
+        background: linear-gradient(to top, rgb(255, 46, 46), rgb(255, 154, 161));
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        h3, h4{
+            font-size: 1.1rem;
+            font-family: "Annapurna SIL", serif;
+            font-weight: 500;
+            font-style: normal;
+            color: black;
+            margin: 0px 5px;
+        }
+        h4{
+            text-align: center;
+        }
+        .item1, .item2, .item3, .item4 {
+            h3{
+                font-weight: 700;
+            }
+            line-height: 20px;
+        }
+        .item5 , .item7, .item9, .item11 {
+            background: linear-gradient(to left,rgba(210, 10, 10, 0.7), rgba(210, 10, 10, 0.1));
+            margin-left: 5px;
+            background-color: black;
+        }
+        .item6, .item8, .item10, .item12 {
+            background: linear-gradient(to right,rgba(210, 10, 10, 0.7), rgba(210, 10, 10, 0.1));
+            margin-right: 5px;
+            background-color: black;
+        }
+        .item1{
+            grid-area: item1;
+        }
+        .item2{
+            grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .item4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+        .item6{
+            grid-area: item6;
+        }
+        .item7{
+            grid-area: item7;
+        }
+        .item8{
+            grid-area: item8;
+        }
+        .item9{
+            grid-area: item9;
+        }
+        .item10{
+            grid-area: item10;
+        }
+        .item11{
+            grid-area: item11;
+        }
+        .item12{
+            grid-area: item12;
+        }
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(210, 10, 10);
+        padding: 60px 15px 15px 15px;
+        margin: 0px 15px 15px 15px;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        font-weight: 800;
+    }
+    .fila-noticias {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: space-around;
+        height: 550px;
+        margin: 20px 0px;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .col-noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px ;
+        .noticia {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 330px;
+            height: auto;
+            padding: 15px;
+            box-shadow: 0px 0px 10px gray;
+            border: 5px r silver;
+            margin: 15px 10px;
+            a, p, h2, h3 {
+                margin: 10px;
+            }
+            h3 {
+                font-family: 'Times New Roman', serif;
+                font-weight: 700;
+            }
+            a {
+                margin-top: auto;
+                margin-right: auto;
+                font-size: 1.5rem;
+                padding-top: 15px;
+                color: gray;
+                text-decoration: none;
+            }
+            h2 {
+                font-size: 2rem;
+                text-align: center; 
+            }
+            p{
+                font-size: 1.5rem;
+                font-family: "Annapurna SIL", serif;
+                font-weight: 400;
+                font-style: normal;
+                color: black;
+            }
+            img {
+                width: 100%;
+                margin-top: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.navbar-nav{
+    .nav-link{
+        color: rgb(255, 255, 255) !important;
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 0px 10px;
+        &:hover{
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px white;
+        }
+    }
+}
+
+.navbar-toggler-icon {
+    padding: 20px;
+    border-radius: 5px;
+    color: rgba(210, 10, 10, 0.4);
+    font-size: 3rem;
+    filter: invert(13%) sepia(100%) saturate(7473%) hue-rotate(358deg) brightness(100%) contrast(119%);
+}
