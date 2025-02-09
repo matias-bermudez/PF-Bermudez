@@ -1,7 +1,7 @@
 # PROYECTO UFC  
 
 ### Introducción  
-¡Hola! Mi nombre es Matías, y te presento mi primer proyecto formal, donde únicamente utilicé HTML5 y CSS3.  
+¡Hola! Mi nombre es Matías, y te presento mi primer proyecto formal, donde únicamente utilicé HTML5 y SASS, con el fin de facilitar la utilización de CSS3.  
 
 ### ¿De qué trata?  
 Con la intención de informar y realizar un proyecto sobre un tema que me apasiona, como las artes marciales mixtas, desarrollé un sitio web sobre la UFC (Ultimate Fighting Championship).  
