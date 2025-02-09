@@ -255,7 +255,64 @@ footer .redes .red picture img {
   margin-top: 0px;
 }
 
-/*4to Components*/
-/*5to todo lo de mediaQ*/
+.noticias {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+.noticias img {
+  width: 600px;
+  object-fit: contain;
+}
+.noticias h2, .noticias h3, .noticias td, .noticias th, .noticias p {
+  color: black;
+}
+.noticias h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.noticias p {
+  font-family: "Annapurna SIL", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.1;
+  font-size: 1.5rem;
+  margin: 10px 5px;
+}
+.noticias .columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 50%;
+  margin: 0px 50px auto 50px;
+}
+.noticias .columna .noticia-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  padding: 40px 15px 40px 15px;
+  margin: 20px 0px;
+  box-shadow: 0px 0px 20px silver;
+}
+.noticias .columna .noticia-vertical h2 {
+  margin-top: 10px;
+  font-family: "Times New Roman", serif;
+  font-weight: 700;
+}
+.noticias .columna .noticia-vertical img {
+  width: 95%;
+  object-fit: contain;
+}
+.noticias .columna .noticia-vertical p {
+  margin-top: 5px;
+}
+.noticias .columna .noticia-vertical table tr td {
+  padding: 10px 0px;
+}
 
 /*# sourceMappingURL=style.css.map */
