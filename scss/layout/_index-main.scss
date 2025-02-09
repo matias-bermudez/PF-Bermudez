@@ -43,8 +43,6 @@
             font-style: normal;
             color: black;
             margin: 0px 5px;
-        }
-        h4{
             text-align: center;
         }
         .item1, .item2, .item3, .item4 {
@@ -115,7 +113,7 @@
         flex-direction: row;
         align-items: top;
         justify-content: space-around;
-        height: 550px;
+        height: auto;
         margin: 20px 0px;
         width: 90%;
         flex-wrap: wrap;
@@ -143,6 +141,7 @@
             h3 {
                 font-family: 'Times New Roman', serif;
                 font-weight: 700;
+                text-align: center; 
             }
             a {
                 margin-top: auto;
