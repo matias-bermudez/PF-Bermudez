@@ -422,6 +422,108 @@ footer .redes .red picture img {
   background-color: #cc0000;
 }
 
+.ranking-section .h1-ranking {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 80px;
+  text-align: center;
+  margin: 15px 0px;
+  color: rgb(210, 10, 10);
+}
+.ranking-section .fila-ranking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 10px;
+  gap: 30px 0px;
+  flex-wrap: wrap;
+}
+.ranking-section .fila-ranking .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 850px;
+  margin: 0px 15px;
+  box-shadow: 0px 0px 10px silver;
+}
+.ranking-section .fila-ranking .card ol {
+  padding: 15px 15px;
+}
+.ranking-section .fila-ranking .card ol li {
+  color: rgb(76, 76, 76);
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+}
+.ranking-section .fila-ranking .card ol li::marker {
+  font-weight: bold;
+}
+.ranking-section .fila-ranking .card h2, .ranking-section .fila-ranking .card h3 {
+  margin-bottom: -20px;
+}
+.ranking-section .fila-ranking .card h2 {
+  color: black;
+  text-align: right;
+  margin-left: auto;
+  font-size: 48px;
+  margin-right: 10px;
+}
+.ranking-section .fila-ranking .card h3 {
+  color: rgb(210, 10, 10);
+  text-align: left;
+  margin-right: auto;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+.ranking-section .fila-ranking .card h2, .ranking-section .fila-ranking .card h4 {
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ranking-section .fila-ranking .card .nombre-peso {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+.ranking-section .fila-ranking .card .nombre-peso h3 {
+  margin: 10px 0px 0px 10px;
+  font-size: 12px;
+}
+.ranking-section .fila-ranking .card .nombre-peso h2 {
+  margin-right: 10px;
+  height: 60px;
+}
+.ranking-section .fila-ranking .card h4 {
+  color: gray;
+  text-align: right;
+  margin-left: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.ranking-section .fila-ranking .card img {
+  width: 100%;
+  object-fit: contain;
+  margin-top: -51px;
+}
+.ranking-section .fila-ranking .card .libra-x-libra {
+  margin-top: -17px;
+}
+
 /*4to Components*/
 /*5to todo lo de mediaQ*/
 
