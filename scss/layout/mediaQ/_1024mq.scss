@@ -1,0 +1,186 @@
+@media(max-width:1024px) {
+    
+    /* Index */
+    .index {
+        .noticias-index {
+            h2 {
+                font-size: 25px;
+            }
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "item1 item1 item2 item2"
+                "item5 item6 item7 item8"
+                "item4 item4 item3 item3"
+                "item9 item10 item11 item12"
+                ;
+                width: 80%;
+                row-gap: 10px;
+            }
+            .fila-noticias {
+                width: 90%;
+                .col-noticias {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    /* Fin Index */
+
+    /* I Rankings */
+    .ranking-section {
+        .h1-ranking {
+            font-size: 50px;
+        }
+        .fila-ranking {
+            flex-wrap: wrap;
+            gap: 30px 10px;
+            .card {
+                width: 300px;
+                height: 820px;
+                h3 {
+                    font-size: 16px;
+                }
+                .nombre-peso {
+                    h3 {
+                        margin: 10px;
+                    }
+                    h2 {
+                        margin-right: 10px;
+                    }
+                }
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    /* Fin Ranking */
+
+    /* Inicio Nosotros */
+    .about-us {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5px;
+        padding: 20px 20px;
+        .puntos {
+            width: 90%;
+            align-items: center;
+            margin: 10px 0px;
+            .punto {
+                margin: 10px 0px;
+                padding: 0px;
+                p {
+                    font-size: 1.5rem;
+                    margin: 15px 0px;
+                }
+            }
+        }
+        .formulario {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+            url(../assets/img/ufc-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 15px 0px;
+            width: 90%;
+        }
+    }
+    /* Fin Nosotros */
+
+    /* Inicio Records */
+    .peleadores {
+        img {
+            height: 100%;
+            width: 90%;
+            margin-left: -120px;
+        }
+        .peleador {
+            height: 450px;
+            background-size: 120% 100%;
+            .columna-hacia-izq {
+                margin: 0px;
+                padding: 20px 0px;
+                margin-left: 15px;
+                h2 {
+                    font-size: 4rem;
+                    line-height: 60px;
+                    margin-top: 15px;
+                }
+                h3 {
+                    margin: 0px 10px;
+                }
+            }
+            h3 {
+                margin: 20px 0px;
+                font-size: 2rem;
+            }
+            .columna-centrada {
+                margin-left: -150px;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                ul {
+                    li {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            ul {
+                li {
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+
+    .videos {
+        .videos-record {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .video {
+                width: 45%;
+                margin: 20px 10px;
+                .titulo-video, h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .videos-columna {
+            .videos-record {
+                height: auto;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .video {
+                    width: 45%;
+                    margin: 20px 10px;
+                    .titulo-video, h2 {
+                        font-size: 2rem;
+                    }
+                    iframe {
+                        width: 90%;
+                        margin: 0;
+                    }
+                }
+            }
+            .titulo-video {
+                font-size: 3rem;
+                text-align: center;
+                margin: 10px 20px;
+            }
+        }
+    }
+    /* Fin Records */
+
+    /* Inicio Noticias */
+    .noticias {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .columna {
+            width: 80%;
+        }
+    }
+    /* Fin Noticias */
+}

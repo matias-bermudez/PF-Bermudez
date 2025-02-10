@@ -1,0 +1,43 @@
+@media(max-width:1400px) {
+
+    /* Nosotros */
+    .about-us {
+        .puntos {
+            .punto {
+                h2{
+                    font-size: 1.7rem;
+                    font-family: "Anton SC", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+    /* Fin Nosotros */
+
+    /* Records */
+    .peleadores {
+        img {
+            margin-left: -50px;
+        }
+        .peleador {
+            .columna-centrada {
+                margin-left: -150px;
+                h3 {
+                    font-size: 2rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .columna-hacia-izq {
+                h2 {
+                    font-size: 5rem;
+                    line-height: 85px;
+                }
+            }
+        }
+    }
+}
