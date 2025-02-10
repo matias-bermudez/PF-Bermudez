@@ -524,7 +524,194 @@ footer .redes .red picture img {
   margin-top: -17px;
 }
 
-/*4to Components*/
-/*5to todo lo de mediaQ*/
+.peleadores .h1-records {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 80px;
+  text-align: center;
+  margin: 15px 0px;
+  color: rgb(210, 10, 10);
+}
+.peleadores .peleador {
+  height: 531px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../assets/img/ufc-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.peleadores .peleador .columna-centrada {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0px 10px 0px 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.peleadores .peleador .columna-centrada ul {
+  list-style-type: none;
+}
+.peleadores .peleador .columna-centrada ul li {
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.peleadores .peleador .columna-centrada h3 {
+  color: rgb(210, 10, 10);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0px;
+}
+.peleadores .peleador .columna-hacia-izq {
+  height: 100%;
+  width: 45%;
+  margin: 30px 10px 10px 30px;
+  padding: 10px 0px;
+}
+.peleadores .peleador .columna-hacia-izq h2, .peleadores .peleador .columna-hacia-izq p, .peleadores .peleador .columna-hacia-izq h3 {
+  text-align: left;
+}
+.peleadores .peleador .columna-hacia-izq h3 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  margin: 10px 0px;
+}
+.peleadores .peleador h3, .peleadores .peleador p {
+  color: white;
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.peleadores h2 {
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 100px;
+  color: white;
+}
+.peleadores p {
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: white;
+}
+.peleadores img {
+  height: 100%;
+  object-fit: contain;
+}
+.peleadores h3 {
+  color: rgb(210, 10, 10);
+}
+
+.videos .videos-record {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/ufc-logo.png);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.videos .videos-record .video {
+  width: 50%;
+  height: 100%;
+  margin: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videos .videos-record .video h2, .videos .videos-record .video h3 {
+  color: white;
+  text-align: center;
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.videos .videos-record .video h2 {
+  margin-bottom: -10px;
+  line-height: 50px;
+  font-size: 40px;
+}
+.videos .videos-record .video h3 {
+  font-size: 25px;
+}
+.videos .videos-record .video .titulo-video {
+  padding: 10px;
+  color: rgb(210, 10, 10);
+  font-size: 48px;
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.videos .videos-record .video .titulo-video {
+  color: rgb(210, 10, 10);
+  font-size: 48px;
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.videos .videos-record .video iframe {
+  margin: 0px 30px;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+  object-fit: contain;
+  margin-bottom: 60px;
+  padding: 5px;
+  background-color: rgb(210, 10, 10);
+}
+.videos .videos-columna {
+  background: linear-gradient(rgb(0, 0, 0.9), rgb(0, 0, 0.9));
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.videos .videos-columna .titulo-video {
+  color: rgb(210, 10, 10);
+  font-size: 48px;
+  font-family: "Do Hyeon", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+}
+.videos .videos-columna h3 {
+  margin-top: 10px;
+}
+.videos .videos-columna .videos-record {
+  height: 520px;
+}
+.videos .videos-columna .videos-record .video iframe {
+  margin: 0px 30px;
+  align-items: center;
+  width: 100%;
+  height: 460%;
+  object-fit: contain;
+  margin-bottom: 60px;
+  padding: 5px;
+  background-color: rgb(210, 10, 10);
+}
 
 /*# sourceMappingURL=style.css.map */
