@@ -1,0 +1,68 @@
+@media(max-width:768px) {
+    /* Inicio Header */
+    header {
+        img {
+            width: 150px;
+        }
+        nav {
+            ul {
+                li {
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    /* Fin Header */
+
+    /* Inicio Index*/
+        .index {
+            .noticias-index {
+                h2 {
+                    font-size: 20px;
+                }
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: 
+                    "item1 item1"
+                    "item5 item6"
+                    "item2 item2"
+                    "item7 item8"
+                    "item3 item3"
+                    "item9 item10"
+                    "item4 item4"
+                    "item11 item12"
+                    ;
+                    width: 80%;
+                }
+            }
+        }
+    /* Fin Index*/
+
+    /* Inicio Nosotros */
+    .about-us {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        .puntos {
+            .punto {
+                width: 100%;
+                h2 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .formulario {
+            .inputs {
+                label {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    /* Fin Nosotros */
+}

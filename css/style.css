@@ -16,7 +16,6 @@ html, body {
 main {
   flex: 1;
   height: auto;
-  min-height: 100vh;
 }
 
 /*3ero Layout*/
@@ -325,7 +324,7 @@ footer .redes .red picture img {
   align-items: center;
   justify-content: space-between;
   margin: 0 20px;
-  padding: 5% 5%;
+  padding: 0px 15px;
   flex-wrap: wrap;
 }
 .about-us .puntos {
@@ -712,6 +711,459 @@ footer .redes .red picture img {
   margin-bottom: 60px;
   padding: 5px;
   background-color: rgb(210, 10, 10);
+}
+
+/*4to Components*/
+/*5to todo lo de mediaQ*/
+@media (max-width: 1400px) {
+  /* Nosotros */
+  .about-us .puntos .punto h2 {
+    font-size: 1.7rem;
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Fin Nosotros */
+  /* Records */
+  .peleadores img {
+    margin-left: -50px;
+  }
+  .peleadores .peleador .columna-centrada {
+    margin-left: -150px;
+  }
+  .peleadores .peleador .columna-centrada h3 {
+    font-size: 2rem;
+  }
+  .peleadores .peleador .columna-centrada ul li {
+    font-size: 1.5rem;
+  }
+  .peleadores .peleador .columna-hacia-izq h2 {
+    font-size: 5rem;
+    line-height: 85px;
+  }
+}
+@media (max-width: 1024px) {
+  /* Index */
+  .index .noticias-index h2 {
+    font-size: 25px;
+  }
+  .index .noticias-index .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "item1 item1 item2 item2" "item5 item6 item7 item8" "item4 item4 item3 item3" "item9 item10 item11 item12";
+    width: 80%;
+    row-gap: 10px;
+  }
+  .index .noticias-index .fila-noticias {
+    width: 90%;
+  }
+  .index .noticias-index .fila-noticias .col-noticias {
+    padding: 0px;
+  }
+  /* Fin Index */
+  /* I Rankings */
+  .ranking-section .h1-ranking {
+    font-size: 50px;
+  }
+  .ranking-section .fila-ranking {
+    flex-wrap: wrap;
+    gap: 30px 10px;
+  }
+  .ranking-section .fila-ranking .card {
+    width: 300px;
+    height: 820px;
+  }
+  .ranking-section .fila-ranking .card h3 {
+    font-size: 16px;
+  }
+  .ranking-section .fila-ranking .card .nombre-peso h3 {
+    margin: 10px;
+  }
+  .ranking-section .fila-ranking .card .nombre-peso h2 {
+    margin-right: 10px;
+  }
+  .ranking-section .fila-ranking .card h2 {
+    font-size: 2.5rem;
+  }
+  /* Fin Ranking */
+  /* Inicio Nosotros */
+  .about-us {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 5px;
+    padding: 20px 20px;
+  }
+  .about-us .puntos {
+    width: 90%;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  .about-us .puntos .punto {
+    margin: 10px 0px;
+    padding: 0px;
+  }
+  .about-us .puntos .punto p {
+    font-size: 1.5rem;
+    margin: 15px 0px;
+  }
+  .about-us .formulario {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../assets/img/ufc-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px 0px;
+    width: 90%;
+  }
+  /* Fin Nosotros */
+  /* Inicio Records */
+  .peleadores img {
+    height: 100%;
+    width: 90%;
+    margin-left: -120px;
+  }
+  .peleadores .peleador {
+    height: 450px;
+    background-size: 120% 100%;
+  }
+  .peleadores .peleador .columna-hacia-izq {
+    margin: 0px;
+    padding: 20px 0px;
+    margin-left: 15px;
+  }
+  .peleadores .peleador .columna-hacia-izq h2 {
+    font-size: 4rem;
+    line-height: 60px;
+    margin-top: 15px;
+  }
+  .peleadores .peleador .columna-hacia-izq h3 {
+    margin: 0px 10px;
+  }
+  .peleadores .peleador h3 {
+    margin: 20px 0px;
+    font-size: 2rem;
+  }
+  .peleadores .peleador .columna-centrada {
+    margin-left: -150px;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .peleadores .peleador .columna-centrada ul li {
+    font-size: 1.5rem;
+  }
+  .peleadores .peleador ul li {
+    margin: 20px 0px;
+  }
+  .videos .videos-record {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .videos .videos-record .video {
+    width: 45%;
+    margin: 20px 10px;
+  }
+  .videos .videos-record .video .titulo-video, .videos .videos-record .video h2 {
+    font-size: 2rem;
+  }
+  .videos .videos-columna .videos-record {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .videos .videos-columna .videos-record .video {
+    width: 45%;
+    margin: 20px 10px;
+  }
+  .videos .videos-columna .videos-record .video .titulo-video, .videos .videos-columna .videos-record .video h2 {
+    font-size: 2rem;
+  }
+  .videos .videos-columna .videos-record .video iframe {
+    width: 90%;
+    margin: 0;
+  }
+  .videos .videos-columna .titulo-video {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 20px;
+  }
+  /* Fin Records */
+  /* Inicio Noticias */
+  .noticias {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .noticias .columna {
+    width: 80%;
+  }
+  /* Fin Noticias */
+}
+@media (max-width: 768px) {
+  /* Inicio Header */
+  header img {
+    width: 150px;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  /* Fin Header */
+  /* Inicio Index*/
+  .index .noticias-index h2 {
+    font-size: 20px;
+  }
+  .index .noticias-index .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "item1 item1" "item5 item6" "item2 item2" "item7 item8" "item3 item3" "item9 item10" "item4 item4" "item11 item12";
+    width: 80%;
+  }
+  /* Fin Index*/
+  /* Inicio Nosotros */
+  .about-us {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .about-us .puntos .punto {
+    width: 100%;
+  }
+  .about-us .puntos .punto h2 {
+    font-size: 1.5rem;
+  }
+  .about-us .puntos .punto p {
+    font-size: 1.2rem;
+  }
+  .about-us .formulario .inputs label {
+    font-size: 1rem;
+  }
+  /* Fin Nosotros */
+}
+@media (max-width: 600px) {
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  /* I Nosotros*/
+  .about-us {
+    padding: 0;
+  }
+  .about-us .puntos .punto h2 {
+    font-size: 1rem;
+  }
+  /* F Nosotros*/
+  .peleadores img {
+    width: 150px;
+    margin: 0;
+    margin-top: -290px;
+  }
+  .peleadores .h1-records {
+    font-size: 3rem;
+  }
+  .peleadores .peleador {
+    flex-wrap: wrap;
+    height: 560px;
+    background-size: contain;
+  }
+  .peleadores .peleador .columna-hacia-izq {
+    width: 56%;
+  }
+  .peleadores .peleador .columna-hacia-izq h3, .peleadores .peleador .columna-hacia-izq p {
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin: 10px;
+  }
+  .peleadores .peleador .columna-hacia-izq h2 {
+    font-size: 3rem;
+    line-height: 50px;
+    margin: 10px 0px 0px 10px;
+  }
+  .peleadores .peleador .columna-hacia-izq ul li {
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+  .peleadores .peleador .columna-hacia-izq h3 {
+    font-size: 25px;
+    margin: 5px 10px;
+  }
+  .peleadores .peleador .columna-centrada {
+    margin: 0;
+    margin-top: -450px;
+    width: 100%;
+  }
+  .peleadores .peleador .columna-centrada h3 {
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+  .videos {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .videos .videos-record {
+    height: auto;
+  }
+  .videos .videos-record .video {
+    width: 100%;
+    margin: 0;
+  }
+  .videos-columna .titulo-video {
+    font-size: 2rem;
+  }
+  .videos-columna .videos-record {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .videos-columna .videos-record .video {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 460px) {
+  /* Inicio Index*/
+  .noticias-index .fila-noticias {
+    padding: 0px 0px;
+    width: 90%;
+  }
+  .noticias-index .fila-noticias .col-noticias {
+    padding: 0px 0px;
+    width: 80%;
+  }
+  .noticias-index .fila-noticias .col-noticias .noticia {
+    width: 300px;
+    margin: 15px 0px;
+  }
+  .noticias-index h2 {
+    font-size: 1.5rem;
+    margin: 0px 15px;
+  }
+  .noticias-index h3 {
+    font-size: 1.5rem;
+  }
+  .noticias-index p {
+    font-size: 1.2rem;
+  }
+  .noticias-index .grid-container {
+    width: 80%;
+  }
+  /* Fin Index */
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  header nav ul li a {
+    font-size: 2px;
+  }
+  /* Inicio Ranking */
+  .ranking-section .h1-ranking {
+    font-size: 2rem;
+  }
+  .ranking-section .card {
+    height: 780px;
+    width: 320px;
+  }
+  .ranking-section .card ol {
+    margin: 0px 0px 0px 30px;
+  }
+  .ranking-section .card ol li {
+    margin-bottom: 5px;
+  }
+  /* Fin Ranking*/
+  /* Inicio Nosotros */
+  .about-us {
+    margin: 5px 0px;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .about-us .puntos .punto {
+    gap: 30px;
+  }
+  .about-us .puntos .punto h2 {
+    width: 30%;
+    font-size: 1.4rem;
+    margin: 10px 0px;
+  }
+  .about-us .puntos .punto p {
+    margin: 10px 0px;
+  }
+  .about-us .formulario .inputs {
+    padding: 10px 20px;
+    width: 90%;
+  }
+  .about-us .formulario .inputs input {
+    width: 90%;
+  }
+  .about-us .formulario label {
+    font-size: 1.2rem;
+  }
+  .about-us .formulario .btn {
+    align-items: center;
+  }
+  /* Inicio Records */
+  .peleadores .peleador .columna-centrada h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .peleadores .peleador .columna-centrada ul li {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* Fin Records */
+  /* Inicio Noticias */
+  .noticias .columna {
+    width: 90%;
+    margin: 0px 5px;
+  }
+  .noticias .columna .noticia-vertical {
+    padding: 20px 10px;
+  }
+  .noticias .columna .noticia-vertical h2 {
+    font-size: 1.5rem;
+  }
+  .noticias .columna .noticia-vertical iframe {
+    height: auto;
+  }
+  .noticias .columna .noticia-vertical p {
+    font-size: 1.2rem;
+  }
+  /* Fin Noticias */
+}
+@media (max-width: 375px) {
+  .peleadores img {
+    margin: 0;
+    margin-top: -20px;
+  }
+  .peleadores .peleador {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 700px;
+  }
+  .peleadores .peleador .columna-centrada {
+    width: 100%;
+    margin: 0;
+    margin-top: -40px;
+  }
+  .peleadores .peleador .columna-hacia-izq {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 280px;
+  }
+  .peleadores .peleador .columna-hacia-izq h2, .peleadores .peleador .columna-hacia-izq h3, .peleadores .peleador .columna-hacia-izq p {
+    margin: 0;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .videos .videos-columna .videos-record {
+    width: 90%;
+  }
+  .videos .videos-columna .videos-record .video {
+    width: 300px;
+  }
+  .videos .videos-columna .videos-record .video iframe {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

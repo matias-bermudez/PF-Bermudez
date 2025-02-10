@@ -1,0 +1,46 @@
+@media(max-width:375px) {
+    .peleadores {
+        img {
+            margin: 0;
+            margin-top: -20px;
+        }
+        .peleador {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 700px;
+            .columna-centrada {
+                width: 100%;
+                margin: 0;
+                margin-top: -40px;
+            }
+            .columna-hacia-izq {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+                height: 280px;
+                h2, h3, p {
+                    margin: 0;
+                    text-align: center;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .videos {
+        .videos-columna {
+            .videos-record {
+                width: 90%;
+                .video {
+                    width: 300px;
+                    iframe {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
