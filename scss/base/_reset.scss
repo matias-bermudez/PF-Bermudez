@@ -6,12 +6,12 @@
 
 html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: auto;
 }
 
 main {
-    flex: 1;
-    height: auto;
+    flex-grow: 1;
 }
