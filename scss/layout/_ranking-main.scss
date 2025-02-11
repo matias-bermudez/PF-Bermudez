@@ -1,13 +1,13 @@
 .ranking-section {
     .h1-ranking {
-        font-family: "Inter", serif;
+        font-family: $Inter;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: italic;
         font-size: 80px;
         text-align: center;
         margin: 15px 0px;
-        color: rgb(210, 10, 10);
+        color: $rojo-ufc;
     }
     .fila-ranking {
         display: flex;
@@ -31,7 +31,7 @@
                     color: rgb(76, 76, 76);
                     line-height: 25px;
                     margin-bottom: 10px;
-                    font-family: "Inter", serif;
+                    font-family: $Inter;
                     font-optical-sizing: auto;
                     font-weight: 500;
                     font-style: medium;
@@ -52,17 +52,17 @@
                 margin-right: 10px;
             }
             h3 {
-                color: rgb(210, 10, 10);
+                color: $rojo-ufc;
                 text-align: left;
                 margin-right: auto;
-                font-family: "Inter", serif;
+                font-family: $Inter;
                 font-optical-sizing: auto;
                 font-weight: 700;
                 font-style: italic;
                 font-size: 20px;
             }
             h2, h4 {
-                font-family: "Anton SC", serif;
+                font-family: $Anton-SC;
                 font-weight: 400;
                 font-style: normal;
             }
