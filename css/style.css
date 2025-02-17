@@ -664,13 +664,6 @@ footer .redes .red picture img {
   font-weight: 400;
   font-style: normal;
 }
-.videos .videos-record .video .titulo-video {
-  color: rgb(210, 10, 10);
-  font-size: 48px;
-  font-family: "Do Hyeon", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 .videos .videos-record .video iframe {
   margin: 0px 30px;
   align-items: center;

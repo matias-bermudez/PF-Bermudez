@@ -7,7 +7,7 @@
         font-size: 80px;
         text-align: center;
         margin: 15px 0px;
-        color: $rojo-ufc;
+        color: map-get($colores, rojo-ufc);
     }
     .fila-ranking {
         @include flex(space-evenly, center, row);
@@ -49,7 +49,7 @@
                 margin-right: 10px;
             }
             h3 {
-                color: $rojo-ufc;
+                color: map-get($colores, rojo-ufc);
                 text-align: left;
                 margin-right: auto;
                 font-family: $Inter;
