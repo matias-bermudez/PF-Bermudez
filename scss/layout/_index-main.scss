@@ -28,7 +28,7 @@
         width: 95%;
         box-shadow: 0px 0px 10px gray;
         margin-top: 20px;
-        background: linear-gradient(to top, rgb(255, 46, 46), rgb(255, 154, 161));
+        background: linear-gradient(to top, map-get($colores, grid-bottom), map-get($colores, grid-top));
         img{
             width: 100%;
             object-fit: contain;
@@ -49,12 +49,12 @@
             line-height: 20px;
         }
         .item5 , .item7, .item9, .item11 {
-            background: linear-gradient(to left,rgba(210, 10, 10, 0.7), rgba(210, 10, 10, 0.1));
+            background: linear-gradient(to left,map-get($colores, peleador-degrade-interior), map-get($colores, peleador-degrade-exterior));
             margin-left: 5px;
             background-color: black;
         }
         .item6, .item8, .item10, .item12 {
-            background: linear-gradient(to right,rgba(210, 10, 10, 0.7), rgba(210, 10, 10, 0.1));
+            background: linear-gradient(to right,map-get($colores, peleador-degrade-interior), map-get($colores, peleador-degrade-exterior));
             margin-right: 5px;
             background-color: black;
         }
@@ -97,12 +97,12 @@
     }
     h2 {
         color: rgb(255, 255, 255);
-        background-color: $rojo-ufc;
+        background-color: map-get($colores, rojo-ufc);
         padding: 60px 15px 15px 15px;
         margin: 0px 15px 15px 15px;
         font-size: 2rem;
         text-align: center;
-        font-family: 'Times New Roman', serif;
+        font-family: $Times-New-Roman;
         font-weight: 800;
     }
     .fila-noticias {
@@ -130,7 +130,7 @@
                 margin: 10px;
             }
             h3 {
-                font-family: 'Times New Roman', serif;
+                font-family: $Times-New-Roman;
                 font-weight: 700;
                 text-align: center; 
             }
