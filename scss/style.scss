@@ -1,12 +1,12 @@
 /*1ero Utilities*/
 @import "./utilities/variables";
 @import "./utilities/mixins";
+
 /*2do Base*/
 @import "./base/reset";
 
 /*3ero Layout*/
 @import "./layout/header";
-@import "./layout/navbar";
 @import "./layout/footer";
 @import "./layout/index-main";
 @import "./layout/noticias-main";
@@ -15,9 +15,9 @@
 @import "./layout/records-main";
 
 /*4to Components*/
+@import "./components/navbar";
 
 /*5to todo lo de mediaQ*/
-
 @import "./layout/mediaQ/1400mq";
 @import "./layout/mediaQ/1024mq";
 @import "./layout/mediaQ/768mq";
