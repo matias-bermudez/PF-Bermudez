@@ -48,25 +48,6 @@ header img {
   margin: 2% 10%;
 }
 
-.navbar-nav .nav-link {
-  color: rgb(255, 255, 255) !important;
-  font-size: 2rem;
-  font-weight: 800;
-  padding: 0px 10px;
-  transition: transform 0.15s linear;
-}
-.navbar-nav .nav-link:hover {
-  transform: scale(1.2);
-}
-
-.navbar-toggler-icon {
-  padding: 20px;
-  border-radius: 5px;
-  color: rgba(210, 10, 10, 0.4);
-  font-size: 3rem;
-  filter: invert(13%) sepia(100%) saturate(7473%) hue-rotate(358deg) brightness(100%) contrast(119%);
-}
-
 footer {
   width: 100%;
   background-color: black;
@@ -97,6 +78,7 @@ footer .redes .red picture img {
 }
 .top-main img {
   width: 100%;
+  object-fit: contain;
 }
 
 .noticias-index {
@@ -708,6 +690,25 @@ footer .redes .red picture img {
 }
 
 /*4to Components*/
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0px 10px;
+  transition: transform 0.15s linear;
+}
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+}
+
+.navbar-toggler-icon {
+  padding: 20px;
+  border-radius: 5px;
+  color: rgba(210, 10, 10, 0.4);
+  font-size: 3rem;
+  filter: invert(13%) sepia(100%) saturate(7473%) hue-rotate(358deg) brightness(100%) contrast(119%);
+}
+
 /*5to todo lo de mediaQ*/
 @media (max-width: 1400px) {
   /* Nosotros */
