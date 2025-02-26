@@ -14,4 +14,4 @@ Este proyecto se enfocó en la utilización de **Flexbox**, **Box Model** y en c
 A continuación, dejo mi LinkedIn y correo electrónico por cualquier consulta, aporte o simplemente para conectar:  
 [LinkedIn - Matías Bermúdez](https://www.linkedin.com/in/mat%C3%ADas-berm%C3%BAdez-m-7a058a26b/)  
 **Email:** matias.bermudez.munoz@gmail.com                                               
-[Presupuesto y forma de pago.](https://drive.google.com/file/d/1NHzoTDxnJDG2clqXil8MxwU-yLABFqOb/view?usp=sharing)
+[Presupuesto y forma de pago.](https://drive.google.com/file/d/1BeSAiEph0wSkriqiVUWzislxdPw0yY2d/view?usp=sharing)
